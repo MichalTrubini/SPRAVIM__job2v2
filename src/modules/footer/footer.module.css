@@ -1,0 +1,202 @@
+.footer {
+  background: url("../../assets/footer-bg-mb@2x.webp"), var(--limeGreen);
+  background-size: cover;
+  background-blend-mode: color-burn;
+  padding-top: 8rem;
+  padding-bottom: 3.2rem;
+  position: relative;
+  display: grid;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  margin-bottom: 3.2rem;
+  position: relative;
+  z-index: 99;
+  max-width: 46rem;
+}
+
+.wrapper {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 3.2rem;
+  min-height: 44.5rem;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  line-height: 1.25;
+  margin-bottom: 1.6rem;
+}
+
+.headingSubmit {
+  text-align: center;
+  margin: 0;
+}
+
+.text {
+  line-height: 1.5;
+  margin-bottom: 2.4rem;
+}
+
+.gdpr {
+  line-height: 1.5;
+}
+
+.input {
+  width: 100%;
+  padding: 1.8rem 3.2rem;
+  border-radius: 2.6rem;
+  border: solid 1px #d5dceb;
+  color: #323232;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  font-family: inherit;
+}
+
+.button {
+  width: 100%;
+  background-color: #1e1e1e;
+  border: none;
+  border-radius: 2.6rem;
+  color: #fafafa;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1.6rem 0;
+  font-family: inherit;
+  margin-bottom: 2.4rem;
+  border: 1px solid transparent;
+}
+
+.button:hover, .button:focus, .button:active {
+  cursor: pointer;
+  background-color: inherit;
+  border: 1px solid #1e1e1e;
+  color: #1e1e1e;
+  border-radius: 2.6rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 10rem 0;
+}
+
+.imageCircle {
+  width: 6rem;
+  text-align: center;
+}
+
+.pattern {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.error {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.errorMessage {
+  color: #d91818;
+  line-height: 1.5;
+}
+
+.socialIcon:hover {
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(224deg) brightness(102%)
+    contrast(101%);
+}
+
+.link {
+  color: #1e1e1e;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #066ee6;
+}
+
+@media screen and (min-width: 400px) {
+  .wrapper {
+    min-height: 40rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .footer {
+    background: url("../../assets/footer-bg@2x.webp"), var(--limeGreen) no-repeat;
+    background-size: cover;
+    background-blend-mode: color-burn;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  .pattern img {
+    width: 27.5rem;
+  }
+
+  .wrapper {
+    min-height: 36.2rem;
+  }
+
+  .container {
+    gap: 8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    flex-direction: row;
+    gap: 7rem;
+    max-width: 63.6rem;
+    position: relative;
+    left: 22rem;
+    margin-bottom: 13.5rem;
+  }
+
+  .footer {
+    padding-top: 14rem;
+    padding-bottom: 1.6rem;
+  }
+  .social {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .wrapper {
+    min-width: 52.6rem;
+    padding: 4.8rem;
+  }
+  .socialIcon {
+    width: 40px;
+    height: 40px;
+  }
+  .button {
+    margin-bottom: 3.2rem;
+  }
+
+  .confirmation {
+    padding: 8.8rem 0;
+  }
+
+  .pattern img {
+    width: 36rem;
+  }
+}

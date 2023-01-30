@@ -1,0 +1,40 @@
+.row {
+    text-align: center;
+}
+
+.accountContainer {
+    display: inline-block;
+    padding: 1.2rem 2.6rem 1.1rem;
+    border-radius: 3rem;
+    border: solid 1px var(--limeGreen)
+}
+
+.accountContainer:hover, .accountContainer:focus {
+    cursor: pointer;
+    background-color: var(--limeGreen);
+    border-radius: 3rem;
+}
+
+.accountContainer:hover > .text {
+    color: #1c1c1c;
+}
+
+.text {
+    color: var(--limeGreen);
+    font-size: 1.6rem;
+    font-weight: 600;
+} 
+
+@media screen and (min-width: 768px) {
+
+    .text {
+        font-size: 1.8rem;
+    } 
+  }
+
+  @media screen and (min-width: 1024px) {
+
+    .text {
+        font-size: 1.6rem;
+    } 
+  }

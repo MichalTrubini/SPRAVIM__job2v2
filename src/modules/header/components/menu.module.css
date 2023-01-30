@@ -1,0 +1,50 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    align-items: center;
+    margin-bottom: 5.2rem;
+  }
+  
+  .listItem {
+    text-transform: uppercase;
+    color: #fafafa;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .listItem:hover {
+    color: var(--limeGreen);
+    cursor: pointer;
+  }
+
+  .active > li {
+    color: var(--limeGreen);
+  }
+
+  @media screen and (min-width: 768px) {
+
+    .list {
+      gap: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    .listItem {
+      font-size: 2.8rem;
+      font-weight: 600;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 0;
+    }
+  
+    .listItem {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+  }
